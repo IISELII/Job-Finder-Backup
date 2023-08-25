@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo2-3.png" type="image/png">
+    <title>Job Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <img src="images/logo2-3.png" alt="Your Logo" id="navbar-logo">
+      <nav>
+          <div class="nav-links-wrapper">
+              <ul>
+                  <li><a href="#section1">HOME</a></li>
+                  <li><a href="#section2">PROCESS</a></li>
+                  <li><a href="#section4">FACTS</a></li>
+                  <li><a href="aboutus.html">ABOUT US</a></li>
+                  <li><a href="#section3">SERVICES</a></li>
+                  <li class="nav-links-button-wrapper">
+                      <button class="login-btn" onclick="location.href='pages/login.html'">Login</button>
+                      <button class="create-account-btn" onclick="location.href='pages/createaccount.html'">Create Account</button>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+
+
+    <div class="page-section">
+      <div id="section1">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h2>We bring <span class="gradient">solutions</span> <br> to make life easier <br> for our customers.</h2>
+                <p>We have considered our solutions to <br> support every stage of your growth.</p>
+                <button class="get-started-btn" onclick="location.href='#section3'">Get Started</button>
+            </div>
+            <div class="image-content">
+                <img src="images\image_bureau_travail.jpg" alt="Description de l'image">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section" id="section2">
+      <h3 class="sub-title">WHY CHOOSE US ?</h3>
+      <h2 class="main-title">Here are a few <span class="gradient">reasons</span> why our <br> customers choose JobFinder</h2>
+
+      <div class="features">
+        <div class="feature">
+            <div class="feature-number gradient">01</div>
+            <div class="feature-content">
+                <h4 class="feature-title">Titre 1</h4>
+                <p class="feature-description">Description de la caractéristique 1...</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-number gradient">02</div>
+            <div class="feature-content">
+                <h4 class="feature-title">Titre 2</h4>
+                <p class="feature-description">Description de la caractéristique 2...</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-number gradient">03</div>
+            <div class="feature-content">
+                <h4 class="feature-title">Titre 3</h4>
+                <p class="feature-description">Description de la caractéristique 3...</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="large-feature">
+          <img src="images/bureau-europe.jpg" alt="Description de l'image">
+          <div class="large-feature-text">
+              <h4>Titre 1</h4>
+              <p>Description de la grande caractéristique...</p>
+              <button class="learn-more-btn" onclick="location.href='#section3'">Learn More</button>
+          </div>
+      </div>
+      <div class="large-feature">
+            <img src="images/bureau-europe.jpg" alt="Description de l'image">
+            <div class="large-feature-text">
+                <h4>Titre 2</h4>
+                <p>Description de la grande caractéristique...</p>
+                <button class="learn-more-btn" onclick="location.href='#section3'">Learn More</button>
+            </div>
+      </div>
+      <div class="large-feature">
+            <img src="images/bureau-europe.jpg" alt="Description de l'image">
+            <div class="large-feature-text">
+                <h4>Titre 3</h4>
+                <p>Description de la grande caractéristique...</p>
+                <button class="learn-more-btn" onclick="location.href='#section3'">Learn More</button>
+            </div>
+      </div>
+    </div>
+
+
+    <div class="facts-page" id="section4">
+
+      <!-- Div for the image -->
+      <div class="facts-image">
+          <img src="images/image-facts.png" alt="Description of the image">
+      </div>
+
+      <!-- Div for the content -->
+      <div class="facts-content">
+
+          <!-- Customer Satisfaction text -->
+          <p class="satisfaction-text">CUSTOMER SATISFACTION</p>
+
+          <!-- Title -->
+          <h2>We make your spending <br> <span class="gradient">stress-free</span> for you to have <br> the perfect control</h2>
+
+          <!-- Paragraph -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+
+          <!-- KPIs container -->
+          <div class="kpis">
+
+              <!-- KPI 1 -->
+              <div class="kpi">
+                  <p class="kpi-value">99.7%</p>
+                  <h4>Customer Satisfaction</h4>
+              </div>
+
+              <!-- KPI 2 -->
+              <div class="kpi">
+                  <p class="kpi-value">4x</p>
+                  <h4>New Visitors</h4>
+              </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="section3">
+      <!-- Partie gauche -->
+      <div class="left-section">
+          <span class="sub-title">WHAT WE DO?</span>
+          <h2>The services we offer is <br> <span class="gradient">specifically </span> designed <br> to meet your needs</h2>
+          <p>Description ou introduction au sujet des services...</p>
+          <button class="details-btn">More Details</button>
+      </div>
+
+      <!-- Partie droite -->
+      <div class="right-section">
+          <!-- Service 1 -->
+          <a class="service">
+              <img src="images/logo1-1.png" alt="Service 1 Logo" class="service-logo">
+              <div class="service-text">
+                <h3>Market Analysis</h3>
+                <p>Description of Service 1...</p>
+                <button class="goto-service-btn" onclick="location.href='services/service1.html'">Go to service</button>
+              </div>
+          </a>
+          <!-- Service 2, 3 et 4 peuvent être ajoutés de la même manière -->
+          <a class="service">
+            <img src="images/logo2-3.png" alt="Service 2 Logo" class="service-logo">
+            <div class="service-text">
+                <h3>Job Finder</h3>
+                <p>Description of Service 2...</p>
+                <button class="goto-service-btn" onclick="location.href='pages/transition.html'">Go to service</button>
+            </div>
+          </a>
+
+          <a class="service">
+            <img src="images/logo3.png" alt="Service 3 Logo" class="service-logo">
+            <div class="service-text">
+                <h3>Create a CV</h3>
+                <p>Description of Service 3...</p>
+                <button class="goto-service-btn" onclick="location.href='services/service3.html'">Go to service</button>
+            </div>
+          </a>
+
+        <a class="service">
+            <img src="images/logo4.png" alt="Service 4 Logo" class="service-logo">
+            <div class="service-text">
+                <h3>Create a cover letter</h3>
+                <p>Description of Service 4...</p>
+                <button class="goto-service-btn" onclick="location.href='services/service4.html'">Go to service</button>
+            </div>
+        </a>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
+</body>
+</html>

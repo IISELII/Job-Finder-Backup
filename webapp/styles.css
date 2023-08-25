@@ -1,0 +1,601 @@
+/* sur l'ensemble du document */
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-family: Helvetica;
+  color: #838383;
+  word-spacing: 4px;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* pour s'assurer qu'il reste au-dessus des autres éléments */
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links-wrapper {
+  padding: 0 0px;
+  padding-left: 100px;  /* Pour décaler légèrement le contenu vers la droite */
+  margin-left: 0px;
+}
+
+.nav-links-button-wrapper {
+  margin-left: 150px;
+}
+
+#navbar-logo {
+  height: 60px;
+  width: auto;
+  margin-right: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #353434;
+  transition: color 0.3s;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #6355c0;
+}
+
+nav a.active {
+  color: #6355c0;
+}
+
+.page-section {
+  padding: 0;
+  margin: 0;
+  min-height: 85vh;
+  background-color: #f9f9f9;
+}
+
+.login-btn {
+  background-color: #6355c0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+  background-color: rgb(52, 1, 73);
+}
+
+.create-account-btn {
+  background-color: white;
+  color: #353434;
+  border: 2px solid #797979;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-btn:hover {
+  background-color: #E6E6FA80;
+}
+
+#section1 {
+  padding: 0;
+  margin: 0;
+  display: flex; /* Ajoutez cette ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  min-height: 77vh;
+  background-color: #E6E6FA80;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%; /* Cette propriété est déjà correcte */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Organise les éléments enfants en colonne */
+  justify-content: center; /* Centre les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  padding-right: 20px;
+  text-align: center; /* Pour que le texte lui-même soit centré */
+}
+
+.text-content h2 {
+  font-size: 48px;
+  color: #353434;
+  margin-bottom: 10px;
+  font-weight: 500;
+  margin-right: -90px;
+}
+
+.text-content h2 span.gradient {
+  background-image: linear-gradient(45deg, violet, blue);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour assurer une meilleure compatibilité avec Safari */
+  font-style: italic;
+}
+
+.text-content p {
+  font-size: 20px;
+  color: #838383;
+  text-align: left; /* Aligner le texte à gauche par rapport à son conteneur */
+  margin-top: 10px;
+  margin-right: -50px;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-content img {
+  width: auto; /* Modifiez cette propriété pour garder le rapport d'aspect de l'image */
+  height: 100%; /* L'image prendra 100% de la hauteur de .content-wrapper */
+  object-fit: cover;
+}
+
+.get-started-btn {
+  background-color: #6355c0;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 25px;  /* Espacement au-dessus du bouton */
+  transition: background-color 0.3s;
+  margin-left: -180px;
+}
+
+.get-started-btn:hover {
+  background-color: rgb(52, 1, 73); /* Couleur de fond légèrement plus foncée lorsque vous survolez le bouton */
+}
+
+
+/* ******************************************** */
+/* section2 */
+#section2 {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; /* Pour organiser les éléments verticalement */
+  text-align: center; /* Centrer les éléments enfants en mode bloc */
+  padding-top: 0px;
+}
+
+.sub-title {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(182, 182, 182);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 36px;
+  color: #353434;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.page-section h2 span.gradient {
+  background-image: linear-gradient(45deg, violet, blue);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour assurer une meilleure compatibilité avec Safari */
+  font-style: italic;
+}
+
+.features {
+  display: flex;
+  padding-top: 30px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 270px;
+  height: 80px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.feature.active, .feature:hover {
+  background-color: #ffffff;
+}
+
+.feature-number {
+  font-size: 40px;
+  font-weight: 500;
+  background-image: linear-gradient(45deg, violet, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.feature-title {
+  margin: 0;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #838383;
+  margin: 0px;
+  text-align: left;
+}
+
+.large-feature {
+  box-sizing: border-box;
+  width: 63.7%;
+  height: 350px;
+  display: flex;
+  justify-content: center; /* Centre les éléments à l'intérieur */
+  padding-top: 40px;
+  margin: 0 auto;
+  gap: 40px; /* Espacement entre l'image et le texte */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.large-feature img {
+  width: auto; /* L'image prendra sa largeur naturelle jusqu'à la largeur maximale définie ci-dessous */
+  max-width: 45%; /* Largeur maximale que l'image peut prendre */
+  object-fit: cover;
+  height: 100%; /* Ajuste la hauteur de l'image pour qu'elle corresponde à celle du conteneur parent */
+  border-radius: 5px;
+
+}
+
+.large-feature-text {
+  flex: 1; /* Le texte prendra l'espace restant */
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+
+.learn-more-btn {
+  background-color: #6355c0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;  /* Espacement au-dessus du bouton */
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(52, 1, 73); /* Couleur de fond légèrement plus foncée lorsque vous survolez le bouton */
+}
+/* ***************************************************************************** */
+/* section4 */
+
+#section4 {
+  display: flex;
+  height: 90vh;  /* assuming you want it to take the whole viewport height */
+  background-color:#E6E6FA80;
+  justify-content: center;  /* This will center the children elements */
+  align-items: center;  /* This ensures the contents are vertically centered */
+  margin-left: -10%;
+}
+
+.facts-image {
+  flex-basis: 40%;  /* Adjust this value as needed. It defines the base size of the element before distributing space */
+  display: flex;
+  justify-content: center;  /* Centers the image */
+  align-items: center;
+  overflow: hidden;
+}
+
+.facts-image img {
+  width: 100%;  /* Adjust this to control the size of the image within its container */
+  height: auto;
+}
+
+.facts-content {
+  flex-basis: 30%;  /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;  /* Reduced padding */
+}
+
+.satisfaction-text {
+  font-size: 14px;
+  color: rgb(182, 182, 182);
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+.facts-content h2 {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 36px;
+  color: #353434;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.facts-content h2 span.gradient {
+  background-image: linear-gradient(45deg, violet, blue);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour assurer une meilleure compatibilité avec Safari */
+  font-style: italic;
+}
+
+.facts-content p {
+  margin-top: 10px;
+}
+
+.kpis {
+  display: flex;
+  gap: 10px; /* space between the KPIs */
+  width: 80%;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.kpi {
+  flex: 1;
+  text-align: center;
+}
+
+.kpi-value {
+  font-family: a;
+  text-align: left;
+  font-size: 36px;
+  color: #353434;
+  font-weight: bold;
+}
+
+.kpi h4 {
+  text-align: left;
+  font-size: 14px;
+  color: #353434;
+  font-weight: 350;
+  font-weight: bold;
+}
+
+
+/* ***************************************************************************** */
+/* section3 */
+
+#section3 {
+  height: 100vh; /* 100% de la hauteur de la fenêtre d'affichage */
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  gap: 20px;
+}
+
+.left-section {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+  gap: 5px;
+  text-align: left;
+  position: relative; /* nécessaire pour le positionnement absolu des enfants */
+
+}
+
+.enlarged-service-logo {
+  position: absolute; /* permet à l'image de se positionner par rapport à .left-section */
+  top: calc(100% - 300px); /* positionne l'image juste en dessous des autres contenus, vous pouvez ajuster le -50px selon vos besoins */
+  left: 20%; /* centre l'image horizontalement */
+  transform: translateX(-50%); /* garantit que l'image est centrée indépendamment de sa largeur */
+  max-width: 300px; /* ou tout ce que vous voulez */
+  max-height: 200px; /* ou tout ce que vous voulez */
+  animation: spinAndGrow 3s forwards;
+}
+
+/* Retirer les marges et paddings par défaut des éléments enfants */
+.left-section > * {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left; /* Pour s'assurer que le texte est également aligné à gauche */
+}
+
+.sub-title {
+  color: rgb(182, 182, 182);
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.left-section h2 {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+  font-size: 36px;
+  color: #353434;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.left-section h2 span.gradient {
+  background-image: linear-gradient(45deg, violet, blue);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour assurer une meilleure compatibilité avec Safari */
+  font-style: italic;
+}
+
+.details-btn {
+  /* Style pour le bouton. Ajustez selon vos préférences */
+  background-color: #6355c0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+  background-color: rgb(52, 1, 73);
+}
+
+@keyframes spinAndGrow {
+  from {
+      transform: scale(0.1) rotate(180deg);
+      opacity: 0.5;
+  }
+  to {
+      transform: scale(1) rotate(360deg);
+      opacity: 1;
+  }
+}
+
+.left-section .enlarged-service-logo {
+  /* styles précédents pour .enlarged-service-logo... */
+  animation: spinAndGrow 3s forwards;
+}
+
+.right-section {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.service {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;  /* Enlève le soulignement du lien */
+  color: inherit;         /* Garde les couleurs du texte standard */
+  cursor: pointer;        /* Indique qu'il s'agit d'un élément cliquable */
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.service:hover {
+  background-color: #ffffff; /* change la couleur de fond lorsque survolé */
+}
+
+.service.active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+.service-logo {
+  width: 60px; /* Ajustez selon la taille de votre logo */
+  height: 60px;
+  object-fit: cover; /* Ajuste l'image à l'intérieur du conteneur tout en conservant son aspect */
+}
+
+.service h3, .service p {
+  margin: 0; /* Retire les marges par défaut pour une meilleure apparence */
+  display: block; /* Assure que l'élément occupe toute la largeur disponible et passe à la ligne */
+}
+
+.service h3 {
+  padding-top: 10px;
+  margin-bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.goto-service-btn {
+  display: none; /* Caché par défaut */
+  margin-left: auto; /* Pour le pousser à droite */
+  margin-right: -220px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #6355c0; /* Couleur de fond de votre choix */
+  color: white; /* Couleur du texte de votre choix */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.goto-service-btn:hover {
+  background-color: rgb(52, 1, 73);
+}
+
+.service.active .goto-service-btn {
+  display: block; /* Montré lorsque .service est actif */
+}
